@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "horizonsexpansion:block/sapling_poplar"
+    }
+}

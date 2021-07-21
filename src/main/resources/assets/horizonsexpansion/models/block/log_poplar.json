@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "horizonsexpansion:block/log_poplar_top",
+        "side": "horizonsexpansion:block/log_poplar"
+    }
+}

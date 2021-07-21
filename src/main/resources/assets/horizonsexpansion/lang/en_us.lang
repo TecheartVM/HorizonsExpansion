@@ -1,0 +1,56 @@
+tile.planks_poplar.name=Poplar Planks
+tile.planks_ebony.name=Ebony Planks
+tile.planks_walnut.name=Walnut Planks
+tile.planks_palm.name=Palm Planks
+tile.planks_ceriops.name=Ceriops Planks
+tile.planks1_eucalyptus.name=Eucalyptus Planks
+
+tile.log_poplar.name=Poplar Log
+tile.log_ebony.name=Ebony Log
+tile.log_walnut.name=Walnut Log
+tile.log_palm.name=Palm Log
+tile.log_ceriops.name=Ceriops Log
+tile.log1_eucalyptus.name=Eucalyptus Log
+
+tile.leaves_poplar.name=Poplar Leaves
+tile.leaves_ebony.name=Ebony Leaves
+tile.leaves_walnut.name=Walnut Leaves
+tile.leaves_palm.name=Palm Leaves
+tile.leaves_ceriops.name=Ceriops Leaves
+tile.leaves1_eucalyptus.name=Eucalyptus Leaves
+
+tile.leaves_autumn_yellow.name=Yellow Oak Leaves
+tile.leaves_autumn_orange.name=Orange Oak Leaves
+tile.leaves_autumn_red.name=Red Oak Leaves
+tile.leaves_autumn_brown.name=Brown Oak Leaves
+
+tile.sapling_poplar.name=Poplar Sapling
+tile.sapling_ebony.name=Ebony Sapling
+tile.sapling_walnut.name=Walnut Sapling
+tile.sapling_palm.name=Palm Sapling
+tile.sapling_ceriops.name=Ceriops Sapling
+tile.sapling1_eucalyptus.name=Eucalyptus Sapling
+
+tile.stone_marble.name=Marble
+tile.stone_gabbro.name=Gabbro
+tile.stone_limestone.name=Limestone
+tile.stone_basalt.name=Basalt
+tile.stone_orangestone.name=Orangestone
+tile.stone_old_sandstone.name=Old Sandstone
+
+tile.stone_old_sandstone_g.name=Old Sandstone With Grass
+
+tile.cobble_limestone.name=Limestone Cobble
+tile.cobble_basalt.name=Basalt Cobble
+tile.cobble_orangestone.name=Orangestone Cobble
+
+tile.brick_marble.name=Marble Bricks
+tile.brick_limestone.name=Limestone Bricks
+tile.brick_basalt.name=Basalt Bricks
+tile.brick_orangestone.name=Orangestone Bricks
+
+tile.polished_marble.name=Marble Tile
+tile.polished_gabbro.name=Polished Gabbro
+tile.polished_limestone.name=Polished Limestone
+tile.polished_basalt.name=Polished Basalt
+tile.polished_orangestone.name=Polished Orangestone

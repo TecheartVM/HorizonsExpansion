@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "horizonsexpansion:block/slab_poplar"
+    },
+    "type=double": {
+      "model": "horizonsexpansion:block/planks_poplar"
+    },
+    "type=top": {
+      "model": "horizonsexpansion:block/slab_poplar",
+      "x": 180,
+      "uvlock": true
+    }
+  }
+}

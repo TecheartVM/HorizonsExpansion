@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "horizonsexpansion:block/wood_poplar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "horizonsexpansion:block/wood_poplar"
+    },
+    "axis=z": {
+      "model": "horizonsexpansion:block/wood_poplar",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "horizonsexpansion:block/plate_poplar"
+    },
+    "powered=true": {
+      "model": "horizonsexpansion:block/plate_down_poplar"
+    }
+  }
+}

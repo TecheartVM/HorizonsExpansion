@@ -1,0 +1,124 @@
+{
+  "variants": {
+    "facing=east,half=lower,hinge=left,open=false": {
+      "model": "horizonsexpansion:block/door_bottom_poplar"
+    },
+    "facing=east,half=lower,hinge=left,open=true": {
+      "model": "horizonsexpansion:block/door_bottom_hinge_poplar",
+      "y": 90
+    },
+    "facing=east,half=lower,hinge=right,open=false": {
+      "model": "horizonsexpansion:block/door_bottom_hinge_poplar"
+    },
+    "facing=east,half=lower,hinge=right,open=true": {
+      "model": "horizonsexpansion:block/door_bottom_poplar",
+      "y": 270
+    },
+    "facing=east,half=upper,hinge=left,open=false": {
+      "model": "horizonsexpansion:block/door_top_poplar"
+    },
+    "facing=east,half=upper,hinge=left,open=true": {
+      "model": "horizonsexpansion:block/door_top_hinge_poplar",
+      "y": 90
+    },
+    "facing=east,half=upper,hinge=right,open=false": {
+      "model": "horizonsexpansion:block/door_top_hinge_poplar"
+    },
+    "facing=east,half=upper,hinge=right,open=true": {
+      "model": "horizonsexpansion:block/door_top_poplar",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=false": {
+      "model": "horizonsexpansion:block/door_bottom_poplar",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=left,open=true": {
+      "model": "horizonsexpansion:block/door_bottom_hinge_poplar"
+    },
+    "facing=north,half=lower,hinge=right,open=false": {
+      "model": "horizonsexpansion:block/door_bottom_hinge_poplar",
+      "y": 270
+    },
+    "facing=north,half=lower,hinge=right,open=true": {
+      "model": "horizonsexpansion:block/door_bottom_poplar",
+      "y": 180
+    },
+    "facing=north,half=upper,hinge=left,open=false": {
+      "model": "horizonsexpansion:block/door_top_poplar",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=left,open=true": {
+      "model": "horizonsexpansion:block/door_top_hinge_poplar"
+    },
+    "facing=north,half=upper,hinge=right,open=false": {
+      "model": "horizonsexpansion:block/door_top_hinge_poplar",
+      "y": 270
+    },
+    "facing=north,half=upper,hinge=right,open=true": {
+      "model": "horizonsexpansion:block/door_top_poplar",
+      "y": 180
+    },
+    "facing=south,half=lower,hinge=left,open=false": {
+      "model": "horizonsexpansion:block/door_bottom_poplar",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=left,open=true": {
+      "model": "horizonsexpansion:block/door_bottom_hinge_poplar",
+      "y": 180
+    },
+    "facing=south,half=lower,hinge=right,open=false": {
+      "model": "horizonsexpansion:block/door_bottom_hinge_poplar",
+      "y": 90
+    },
+    "facing=south,half=lower,hinge=right,open=true": {
+      "model": "horizonsexpansion:block/door_bottom_poplar"
+    },
+    "facing=south,half=upper,hinge=left,open=false": {
+      "model": "horizonsexpansion:block/door_top_poplar",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=left,open=true": {
+      "model": "horizonsexpansion:block/door_top_hinge_poplar",
+      "y": 180
+    },
+    "facing=south,half=upper,hinge=right,open=false": {
+      "model": "horizonsexpansion:block/door_top_hinge_poplar",
+      "y": 90
+    },
+    "facing=south,half=upper,hinge=right,open=true": {
+      "model": "horizonsexpansion:block/door_top_poplar"
+    },
+    "facing=west,half=lower,hinge=left,open=false": {
+      "model": "horizonsexpansion:block/door_bottom_poplar",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=left,open=true": {
+      "model": "horizonsexpansion:block/door_bottom_hinge_poplar",
+      "y": 270
+    },
+    "facing=west,half=lower,hinge=right,open=false": {
+      "model": "horizonsexpansion:block/door_bottom_hinge_poplar",
+      "y": 180
+    },
+    "facing=west,half=lower,hinge=right,open=true": {
+      "model": "horizonsexpansion:block/door_bottom_poplar",
+      "y": 90
+    },
+    "facing=west,half=upper,hinge=left,open=false": {
+      "model": "horizonsexpansion:block/door_top_poplar",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=left,open=true": {
+      "model": "horizonsexpansion:block/door_top_hinge_poplar",
+      "y": 270
+    },
+    "facing=west,half=upper,hinge=right,open=false": {
+      "model": "horizonsexpansion:block/door_top_hinge_poplar",
+      "y": 180
+    },
+    "facing=west,half=upper,hinge=right,open=true": {
+      "model": "horizonsexpansion:block/door_top_poplar",
+      "y": 90
+    }
+  }
+}

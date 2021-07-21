@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "horizonsexpansion:block/planks_poplar",
+    "top": "horizonsexpansion:block/planks_poplar",
+    "side": "horizonsexpansion:block/planks_poplar"
+  }
+}

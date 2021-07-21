@@ -1,0 +1,80 @@
+{
+  "variants": {
+    "facing=east,in_wall=false,open=false": {
+      "uvlock": true,
+      "y": 270,
+      "model": "horizonsexpansion:block/gate_poplar"
+    },
+    "facing=east,in_wall=false,open=true": {
+      "uvlock": true,
+      "y": 270,
+      "model": "horizonsexpansion:block/gate_open_poplar"
+    },
+    "facing=east,in_wall=true,open=false": {
+      "uvlock": true,
+      "y": 270,
+      "model": "horizonsexpansion:block/gate_wall_poplar"
+    },
+    "facing=east,in_wall=true,open=true": {
+      "uvlock": true,
+      "y": 270,
+      "model": "horizonsexpansion:block/gate_wall_open_poplar"
+    },
+    "facing=north,in_wall=false,open=false": {
+      "uvlock": true,
+      "y": 180,
+      "model": "horizonsexpansion:block/gate_poplar"
+    },
+    "facing=north,in_wall=false,open=true": {
+      "uvlock": true,
+      "y": 180,
+      "model": "horizonsexpansion:block/gate_open_poplar"
+    },
+    "facing=north,in_wall=true,open=false": {
+      "uvlock": true,
+      "y": 180,
+      "model": "horizonsexpansion:block/gate_wall_poplar"
+    },
+    "facing=north,in_wall=true,open=true": {
+      "uvlock": true,
+      "y": 180,
+      "model": "horizonsexpansion:block/gate_wall_open_poplar"
+    },
+    "facing=south,in_wall=false,open=false": {
+      "uvlock": true,
+      "model": "horizonsexpansion:block/gate_poplar"
+    },
+    "facing=south,in_wall=false,open=true": {
+      "uvlock": true,
+      "model": "horizonsexpansion:block/gate_open_poplar"
+    },
+    "facing=south,in_wall=true,open=false": {
+      "uvlock": true,
+      "model": "horizonsexpansion:block/gate_wall_poplar"
+    },
+    "facing=south,in_wall=true,open=true": {
+      "uvlock": true,
+      "model": "horizonsexpansion:block/gate_wall_open_poplar"
+    },
+    "facing=west,in_wall=false,open=false": {
+      "uvlock": true,
+      "y": 90,
+      "model": "horizonsexpansion:block/gate_poplar"
+    },
+    "facing=west,in_wall=false,open=true": {
+      "uvlock": true,
+      "y": 90,
+      "model": "horizonsexpansion:block/gate_open_poplar"
+    },
+    "facing=west,in_wall=true,open=false": {
+      "uvlock": true,
+      "y": 90,
+      "model": "horizonsexpansion:block/gate_wall_poplar"
+    },
+    "facing=west,in_wall=true,open=true": {
+      "uvlock": true,
+      "y": 90,
+      "model": "horizonsexpansion:block/gate_wall_open_poplar"
+    }
+  }
+}

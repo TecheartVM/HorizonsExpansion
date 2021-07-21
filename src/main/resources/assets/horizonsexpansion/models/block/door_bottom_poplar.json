@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "top": "horizonsexpansion:block/door_top_poplar",
+    "bottom": "horizonsexpansion:block/door_bottom_poplar"
+  }
+}

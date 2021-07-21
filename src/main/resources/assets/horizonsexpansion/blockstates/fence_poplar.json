@@ -1,0 +1,48 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "horizonsexpansion:block/fence_post_poplar"
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "horizonsexpansion:block/fence_side_poplar",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "horizonsexpansion:block/fence_side_poplar",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "horizonsexpansion:block/fence_side_poplar",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "horizonsexpansion:block/fence_side_poplar",
+        "y": 270,
+        "uvlock": true
+      }
+    }
+  ]
+}

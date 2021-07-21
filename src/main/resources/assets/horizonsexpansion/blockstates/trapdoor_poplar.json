@@ -1,0 +1,73 @@
+{
+  "variants": {
+    "facing=east,half=bottom,open=false": {
+      "model": "horizonsexpansion:block/trapdoor_poplar",
+      "y": 90
+    },
+    "facing=east,half=bottom,open=true": {
+      "model": "horizonsexpansion:block/trapdoor_open_poplar",
+      "y": 90
+    },
+    "facing=east,half=top,open=false": {
+      "model": "horizonsexpansion:block/trapdoor_poplar",
+      "y": 90,
+      "x": 180
+    },
+    "facing=east,half=top,open=true": {
+      "model": "horizonsexpansion:block/trapdoor_open_poplar",
+      "y": 270,
+      "x": 180
+    },
+    "facing=north,half=bottom,open=false": {
+      "model": "horizonsexpansion:block/trapdoor_poplar"
+    },
+    "facing=north,half=bottom,open=true": {
+      "model": "horizonsexpansion:block/trapdoor_open_poplar"
+    },
+    "facing=north,half=top,open=false": {
+      "model": "horizonsexpansion:block/trapdoor_poplar",
+      "x": 180
+    },
+    "facing=north,half=top,open=true": {
+      "model": "horizonsexpansion:block/trapdoor_open_poplar",
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=bottom,open=false": {
+      "model": "horizonsexpansion:block/trapdoor_poplar",
+      "y": 180
+    },
+    "facing=south,half=bottom,open=true": {
+      "model": "horizonsexpansion:block/trapdoor_open_poplar",
+      "y": 180
+    },
+    "facing=south,half=top,open=false": {
+      "model": "horizonsexpansion:block/trapdoor_poplar",
+      "y": 180,
+      "x": 180
+    },
+    "facing=south,half=top,open=true": {
+      "model": "horizonsexpansion:block/trapdoor_open_poplar",
+      "x": 180,
+      "y": 0
+    },
+    "facing=west,half=bottom,open=false": {
+      "model": "horizonsexpansion:block/trapdoor_poplar",
+      "y": 270
+    },
+    "facing=west,half=bottom,open=true": {
+      "model": "horizonsexpansion:block/trapdoor_open_poplar",
+      "y": 270
+    },
+    "facing=west,half=top,open=false": {
+      "model": "horizonsexpansion:block/trapdoor_poplar",
+      "y": 270,
+      "x": 180
+    },
+    "facing=west,half=top,open=true": {
+      "model": "horizonsexpansion:block/trapdoor_open_poplar",
+      "x": 0,
+      "y": 270
+    }
+  }
+}
