@@ -5,19 +5,22 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.trees.Tree;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.tileentity.SignTileEntityRenderer;
-import net.minecraft.entity.EntityType;
+import net.minecraft.dispenser.IDispenseItemBehavior;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraftforge.fml.RegistryObject;
 import techeart.horizonsexpansion.MainClass;
 import techeart.horizonsexpansion.blocks.*;
+import techeart.horizonsexpansion.render.HEBoatRenderer;
+import techeart.horizonsexpansion.util.HEBoatDispenserBehavior;
 import techeart.horizonsexpansion.util.RegistryHandler;
 import techeart.horizonsexpansion.world.HETree;
-import techeart.horizonsexpansion.world.feature.HETreeFeatures;
 
 import javax.annotation.Nullable;
+import java.util.function.Supplier;
 
 public class RegistryWood
 {
@@ -41,11 +44,11 @@ public class RegistryWood
     private final RegistryObject<Block> saplingPotted;
 
     private final RegistrySign sign;
-    //boat
+    private final RegistryBoat boat;
 
     private final Tree tree;
 
-    public RegistryWood(String name, int flammability, int fireSpreadSpeed, boolean isNatural, @Nullable ConfiguredFeature<BaseTreeFeatureConfig, ?> treeFeature)
+    public RegistryWood(String name, int flammability, int fireSpreadSpeed, boolean isNatural, @Nullable Supplier<ConfiguredFeature<BaseTreeFeatureConfig, ?>> treeFeature)
     {
         type = WoodType.register(WoodType.create(MainClass.MODID + ":" + name));
 
@@ -71,34 +74,22 @@ public class RegistryWood
 
         if (isNatural)
         {
-            leaves = new RegistryBlock("leaves_" + name, () -> new LeavesBlock(
-                    AbstractBlock.Properties
-                            .of(Material.LEAVES)
-                            .strength(0.2F)
-                            .randomTicks()
-                            .sound(SoundType.GRASS)
-                            .noOcclusion()
-                            .isValidSpawn((state, world, pos, entity) -> entity == EntityType.OCELOT || entity == EntityType.PARROT)
-                            .isSuffocating((state, world, pos) -> false)
-                            .isViewBlocking((state, world, pos) -> false)
-            ));
+            leaves = new RegistryBlock("leaves_" + name, BlockLeaves::new, new Item.Properties().tab(ItemGroup.TAB_DECORATIONS));
 
-            if (true)//tree != null)
+            RegistryHandler.addCompostableItem(leaves::getItem, 0.3f);
+
+            if (tree != null)
             {
-                sapling = new RegistryBlock("sapling_" + name, () -> new SaplingBlock(
-                        new HETree(HETreeFeatures.POPLAR),
-                        AbstractBlock.Properties
-                                .of(Material.PLANT)
-                                .instabreak()
-                                .sound(SoundType.GRASS)
-                                .randomTicks()
-                                .noCollission()
-                ), new Item.Properties().tab(ItemGroup.TAB_DECORATIONS));
+                sapling = new RegistryBlock("sapling_" + name, () -> new BlockSapling(tree),
+                        new Item.Properties().tab(ItemGroup.TAB_DECORATIONS));
                 saplingPotted = RegistryHandler.BLOCKS.register("potted_" + name, () -> new FlowerPotBlock(
-                        null,
+                        () -> (FlowerPotBlock) Blocks.FLOWER_POT,
                         sapling::getBlock,
                         AbstractBlock.Properties.copy(Blocks.FLOWER_POT)
                 ));
+
+                ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(new ResourceLocation(MainClass.MODID, "sapling_" + name), saplingPotted);
+                RegistryHandler.addCompostableItem(sapling::getItem, 0.3f);
             }
             else
             {
@@ -113,13 +104,14 @@ public class RegistryWood
             saplingPotted = null;
         }
 
+        boat = new RegistryBoat(name);
+        DispenserBlock.registerBehavior(boat::getItem, new HEBoatDispenserBehavior(boat));
+
         initRenderers();
     }
 
     private void initRenderers()
     {
-        //MainClass.RENDER_HANDLER.setTileRenderer(sign.get, RenderType.cutout());
-
         MainClass.RENDER_HANDLER.setBlockRenderType(door, RenderType.cutout());
         MainClass.RENDER_HANDLER.setBlockRenderType(trapdoor, RenderType.cutout());
         if (sapling != null)
@@ -128,6 +120,7 @@ public class RegistryWood
             MainClass.RENDER_HANDLER.setBlockRenderType(saplingPotted, RenderType.cutout());
         }
         MainClass.RENDER_HANDLER.setTileRenderer(sign.getTile(), SignTileEntityRenderer::new);
+        MainClass.RENDER_HANDLER.setEntityRenderer(boat.getType(), HEBoatRenderer::new);
     }
 
     public WoodType getType() {
@@ -201,6 +194,8 @@ public class RegistryWood
     public RegistrySign getSign() {
         return sign;
     }
+
+    public RegistryBoat getBoat() { return boat; }
 
     public Tree getTree() {
         return tree;

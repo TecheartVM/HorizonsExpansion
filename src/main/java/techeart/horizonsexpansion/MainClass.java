@@ -1,5 +1,7 @@
 package techeart.horizonsexpansion;
 
+import net.minecraft.block.Blocks;
+import net.minecraft.block.FlowerPotBlock;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -35,6 +37,7 @@ public class MainClass
     private void setup(final FMLCommonSetupEvent event)
     {
         // some preinit code
+        RegistryHandler.registerCustomCompostables();
     }
 
     private void doClientStuff(final FMLClientSetupEvent event)

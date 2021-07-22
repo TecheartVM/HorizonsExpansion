@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "horizonsexpansion:log_poplar",
+    "horizonsexpansion:stripped_log_poplar",
+    "horizonsexpansion:wood_poplar",
+    "horizonsexpansion:stripped_wood_poplar"
+  ]
+}
